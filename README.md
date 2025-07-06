@@ -56,8 +56,4 @@ You can retrain the model using `train_model.py` (if available) or modify it as 
 
 
 
-├── test_plant_disease.jpg # Sample leaf image
-├── AppleCedarRust.jpeg # Another test image
-├── .gitignore # Ignored files and folders
-├── README.md # Project documentation
 
