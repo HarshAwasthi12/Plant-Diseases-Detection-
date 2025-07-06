@@ -54,17 +54,8 @@ You can retrain the model using `train_model.py` (if available) or modify it as 
 | Image Proc.  | OpenCV                      |
 | Deployment   | (Optional) Streamlit Cloud / Hugging Face / Render |
 
----
 
-## 📁 Project Structure
 
-plant-disease-detection/
-│
-├── main.py # Main Streamlit app
-├── requirements.txt # Required packages
-├── trained_model.keras # Trained model file
-├── training_hist.json # Model training history
-├── home_page.jpeg # UI image (optional)
 ├── test_plant_disease.jpg # Sample leaf image
 ├── AppleCedarRust.jpeg # Another test image
 ├── .gitignore # Ignored files and folders
