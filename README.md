@@ -1,34 +1,72 @@
 # 🌿 Plant Disease Detection System
 
-This project is a Machine Learning-based web application that can detect plant diseases from leaf images using a trained deep learning model. It helps farmers or agriculture experts to identify potential diseases in plants efficiently.
+A deep learning-based web application to detect diseases in plant leaves. This project leverages the **Plant Village Dataset** and a **Convolutional Neural Network (CNN)** model trained using **TensorFlow/Keras**. The system provides accurate disease predictions through a clean, user-friendly interface built using **Streamlit**.
 
 ---
 
 ## 🚀 Features
 
-- 🌱 Detect diseases in plant leaves via image upload
-- 🧠 Trained using TensorFlow/Keras deep learning models
-- 📊 Shows prediction with confidence score
-- 🖼️ User-friendly UI (Streamlit or any web framework used)
-- 📁 Supports common image formats (JPG, PNG)
-- 🔬 Useful for agricultural analysis and precision farming
+- 📸 Upload plant leaf images for diagnosis
+- 🧠 CNN model trained on 50,000+ images from PlantVillage
+- 📊 Prediction with confidence percentage
+- 🌐 Web-based UI using Streamlit
+- 💾 Saves and loads model (`.keras` or `.h5`)
+- 📁 Accepts JPG, PNG formats
+- 🧪 Test on real leaf images instantly
+
+---
+
+## 📂 Dataset
+
+We used the **Plant Village Dataset** for training, which includes thousands of images across multiple crop types and diseases.
+
+- 🧬 38 classes (healthy + diseased plant leaves)
+- 🖼️ 50,000+ labeled images
+
+📥 **Download Link:**  
+[Kaggle - Plant Village Dataset](https://www.kaggle.com/datasets/emmarex/plantdisease)
+
+> After downloading, extract it into a folder named `plant_dataset/` and use it in your training script.
+
+---
+
+## 🧠 Model Info
+
+- Architecture: **Convolutional Neural Network (CNN)**
+- Framework: **TensorFlow/Keras**
+- Layers: Conv2D, MaxPooling, Flatten, Dense, Dropout
+- Accuracy: ~98% on validation data
+- File: `trained_model.keras`
+
+You can retrain the model using `train_model.py` (if available) or modify it as per your dataset.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Python 3**
-- **TensorFlow / Keras**
-- **Pandas, NumPy**
-- **Matplotlib / Seaborn**
-- **Streamlit** (for web app interface)
-- **OpenCV** (for image preprocessing)
+| Layer        | Tools/Frameworks            |
+|--------------|-----------------------------|
+| Frontend     | Streamlit                   |
+| Backend      | Python                      |
+| ML Framework | TensorFlow / Keras          |
+| Data Handling| Pandas, NumPy               |
+| Visualization| Matplotlib, Seaborn         |
+| Image Proc.  | OpenCV                      |
+| Deployment   | (Optional) Streamlit Cloud / Hugging Face / Render |
 
 ---
 
-## 📦 Installation
+## 📁 Project Structure
 
-```bash
-git clone https://github.com/your-username/plant-disease-detection.git
-cd plant-disease-detection
-pip install -r requirements.txt
+plant-disease-detection/
+│
+├── main.py # Main Streamlit app
+├── requirements.txt # Required packages
+├── trained_model.keras # Trained model file
+├── training_hist.json # Model training history
+├── home_page.jpeg # UI image (optional)
+├── test_plant_disease.jpg # Sample leaf image
+├── AppleCedarRust.jpeg # Another test image
+├── .gitignore # Ignored files and folders
+├── README.md # Project documentation
+
