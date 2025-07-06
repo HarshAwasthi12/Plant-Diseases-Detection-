@@ -32,13 +32,3 @@ This project is a Machine Learning-based web application that can detect plant d
 git clone https://github.com/your-username/plant-disease-detection.git
 cd plant-disease-detection
 pip install -r requirements.txt
-plant-disease-detection/
-│
-├── main.py                      # Main app logic
-├── requirements.txt             # Required packages
-├── trained_model.keras          # Saved ML model
-├── training_hist.json           # Model training history
-├── home_page.jpeg               # UI image (optional)
-├── AppleCedarRust.jpeg          # Sample test image
-├── test_plant_disease.jpg       # Another test image
-└── README.md                    # Project documentation
